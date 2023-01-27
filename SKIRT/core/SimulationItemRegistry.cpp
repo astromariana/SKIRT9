@@ -72,6 +72,8 @@
 #include "ExtragalacticUnits.hpp"
 #include "FSPSSED.hpp"
 #include "FSPSSEDFamily.hpp"
+#include "FSPSLinesSED.hpp"
+#include "FSPSLinesSEDFamily.hpp"
 #include "FieldStrengthCellLibrary.hpp"
 #include "FileBand.hpp"
 #include "FileBorderWavelengthGrid.hpp"
@@ -110,6 +112,7 @@
 #include "InstrumentSystem.hpp"
 #include "InstrumentWavelengthGridProbe.hpp"
 #include "IntegratedLuminosityNormalization.hpp"
+#include "IsoThermalDiskGeometry.hpp"
 #include "IsotropicAngularDistribution.hpp"
 #include "LaserAngularDistribution.hpp"
 #include "LaunchedPacketsProbe.hpp"
@@ -332,6 +335,7 @@ SimulationItemRegistry::SimulationItemRegistry(string version, string format)
     ItemRegistry::add<MarastonSED>();
     ItemRegistry::add<Starburst99SED>();
     ItemRegistry::add<FSPSSED>();
+    ItemRegistry::add<FSPSLinesSED>();
     ItemRegistry::add<BpassSED>();
     ItemRegistry::add<MappingsSED>();
     ItemRegistry::add<TabulatedSED>();
@@ -355,6 +359,7 @@ SimulationItemRegistry::SimulationItemRegistry(string version, string format)
     ItemRegistry::add<FSPSSEDFamily>();
     ItemRegistry::add<BpassSEDFamily>();
     ItemRegistry::add<FileSSPSEDFamily>();
+    ItemRegistry::add<FSPSLinesSEDFamily>();
     ItemRegistry::add<FileIndexedSEDFamily>();
     ItemRegistry::add<MappingsSEDFamily>();
     ItemRegistry::add<LyaGaussianSEDFamily>();
@@ -404,6 +409,7 @@ SimulationItemRegistry::SimulationItemRegistry(string version, string format)
     ItemRegistry::add<AxGeometry>();
     ItemRegistry::add<SepAxGeometry>();
     ItemRegistry::add<ExpDiskGeometry>();
+    ItemRegistry::add<IsoThermalDiskGeometry>();
     ItemRegistry::add<BrokenExpDiskGeometry>();
     ItemRegistry::add<RingGeometry>();
     ItemRegistry::add<TorusGeometry>();
